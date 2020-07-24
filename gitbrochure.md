@@ -1,11 +1,11 @@
-注: <> 表示此处内容根据用户实际情况替换
+注: [] 表示此处内容根据用户实际情况替换
 
 
 
 ## 用户配置
 
--   git config --global user.name "<username>" 配置用户名
--   git config --global user.email "\<user@example.com\>" 配置邮箱
+-   git config --global user.name "[username]" 配置用户名
+-   git config --global user.email "[user@example.com\]" 配置邮箱
 -   git config user.name 查看当前用户名
 -   git config user.email 查看当前用户邮箱
 
@@ -14,12 +14,12 @@
 ## 基本文件操作和命令
 
 -   cd E: 进入E盘
--   mkdir <directoryname> 创建目录, 如testgit
--   cd <directoryname> 进入目录
+-   mkdir [directoryname] 创建目录, 如testgit
+-   cd [directoryname] 进入目录
 -   pwd 显示当前目录
--   touch <filename> 创建文件, 如readme.txt
--   cat <filename> 显示文件内容
--   rm <filename> 删除文件
+-   touch [filename] 创建文件, 如readme.txt
+-   cat [filename] 显示文件内容
+-   rm [filename] 删除文件
 -   ls\dir 查看当前目录内容
 -   clear 清屏
 -   reset 重置
@@ -29,27 +29,27 @@
 ## 修改提交
 
 -   git init 把目录变成可管理仓库(添加.git目录)
--   git add <filename> 添加到暂存区
--   git commit -m "<注释>" 提交到工作区
+-   git add [filename] 添加到暂存区
+-   git commit -m "[注释]" 提交到工作区
 -   git commit --amend 对当前提交节点再次提交, 不产生新的子节点
 -   git status 查看是否有文件未提交
--   git restore <filename> 提交之前丢弃修改
--   git diff <filename> 查看被修改的内容
+-   git restore [filename] 提交之前丢弃修改
+-   git diff [filename] 查看被修改的内容
 
 
 
 ## 版本管理
 
 -   git log 查看历史记录
--   git reset --hard <ref> ref是某个提交记录的引用, 对远程分支无效
+-   git reset --hard [ref] ref是某个提交记录的引用, 对远程分支无效
 -   git reset --hard HEAD^ 相对引用, 退回到上个版本
 -   git reset --hard HEAD^^ 退回到上上个版本,依此类推
--   git reset --hard HEAD~<number> 回退到前number个版本
--   git reset --hard <hash> 直接引用, 退回到hash对应的提交
+-   git reset --hard HEAD~[number] 回退到前number个版本
+-   git reset --hard [hash] 直接引用, 退回到hash对应的提交
 -   git revert HEAD 通过再提交一次上个版本回退到上个版本, 对远程分支有效
 -   git reflog 获取version
--   git reset --hard <version> 退回到指定版本
--   git checkout -- <filename> 丢弃工作区的修改
+-   git reset --hard [version] 退回到指定版本
+-   git checkout -- [filename] 丢弃工作区的修改
 
 
 
@@ -63,29 +63,29 @@
 
 -   git branch 查看分支, 当前分支前会添加一个 * 号
 
--   git branch <branchname> <ref> 在ref创建分支, ref默认为当前位置
+-   git branch [branchname] [ref] 在ref创建分支, ref默认为当前位置
 
--   git checkout <branchname> 切换分支
+-   git checkout [branchname] 切换分支
 
--   git checkout <ref> 分离HEAD, 使其指向指定的提交, commit可以用相对\绝对引用表示
+-   git checkout [ref] 分离HEAD, 使其指向指定的提交, commit可以用相对\绝对引用表示
 
--   git checkout -b <branchname> 创建并切换分支
+-   git checkout -b [branchname] 创建并切换分支
 
--   git merge <branchname> 合并到当前分支
+-   git merge [branchname] 合并到当前分支
 
--   git branch -d <branchname> 删除分支
+-   git branch -d [branchname] 删除分支
 
--   git branch -f master <ref> 强制使master指向某个提交
+-   git branch -f master [ref] 强制使master指向某个提交
 
--   git rebase <dstbranchname> <srcbranchname> 把src分支复制到dst位置, src默认为当前分支
+-   git rebase [dstbranchname] [srcbranchname] 把src分支复制到dst位置, src默认为当前分支
 
--   git cherry-pick <ref1 ref2...> 把提交记录复制到当前位置
+-   git cherry-pick [ref1 ref2...] 把提交记录复制到当前位置
 
--   git rebase -i HEAD~<number> 交互式rebase
+-   git rebase -i HEAD~[number] 交互式rebase
 
--   git tag <tagname> <ref> 给指定提交添加tag
+-   git tag [tagname] [ref] 给指定提交添加tag
 
--   git describe <ref> 查看距离ref最近的标签
+-   git describe [ref] 查看距离ref最近的标签
 
 -   bug分支
 
@@ -119,7 +119,7 @@
     -   打开cmd
         -   ssh-keygen -t rsa -C "user@example.com"
         -   id_rsa是私钥,id_rsa.pub是公钥
-    -   登录GitHub --> 点击头像 --> settings --> SSH and GPG keys --> new SSH key
+    -   登录GitHub --] 点击头像 --] settings --] SSH and GPG keys --] new SSH key
         -   Title随便填
         -   把公钥内容复制粘贴到Key, 点击Add SSH key
     -   完成, 可以看到自己添加的SSH了
@@ -128,7 +128,7 @@
 
 -   添加远程仓库
 
-    -   登录GitHub --> 点击右上角"+"图标 --> New repository, 创建一个新的仓库
+    -   登录GitHub --] 点击右上角"+"图标 --] New repository, 创建一个新的仓库
     -   Repository name填写本地仓库名称
     -   默认是Public, 可以修改为Private, 这样只有自己可以看到
     -   点击Create repository, 创建成功
@@ -136,7 +136,7 @@
 -   链接
 
     -   在本地仓库运行如下命令, 关联本地库
-        -   git remote add origin <url>
+        -   git remote add origin [url]
     -   在本地仓库运行如下命令, 把master分支内容推送到远程仓库
         -   git push -u origin master
         -   第一次需要 -u 参数, 把本地master分支和远程master分支关联
@@ -144,7 +144,7 @@
     -   从现在起, 只要本地做了提交, 就可以通过如下命令把新修改推送到远程仓库
         -   git push origin master
     -   通过如下命令, 可以把远程仓库克隆到本地
-        -   git clone <url>
+        -   git clone [url]
 
 
 
