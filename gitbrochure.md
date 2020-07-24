@@ -119,7 +119,7 @@
     -   打开cmd
         -   ssh-keygen -t rsa -C "user@example.com"
         -   id_rsa是私钥,id_rsa.pub是公钥
-    -   登录GitHub --] 点击头像 --] settings --] SSH and GPG keys --] new SSH key
+    -   登录GitHub --> 点击头像 --> settings --> SSH and GPG keys --> new SSH key
         -   Title随便填
         -   把公钥内容复制粘贴到Key, 点击Add SSH key
     -   完成, 可以看到自己添加的SSH了
@@ -128,7 +128,7 @@
 
 -   添加远程仓库
 
-    -   登录GitHub --] 点击右上角"+"图标 --] New repository, 创建一个新的仓库
+    -   登录GitHub --> 点击右上角"+"图标 --> New repository, 创建一个新的仓库
     -   Repository name填写本地仓库名称
     -   默认是Public, 可以修改为Private, 这样只有自己可以看到
     -   点击Create repository, 创建成功
