@@ -117,7 +117,7 @@
 -   创建SSH Key 
 
     -   打开cmd
-        -   ssh-keygen -t rsa -C "user@example.com"
+        -   ssh-keygen -t rsa -C "[user@example.com]"
         -   id_rsa是私钥,id_rsa.pub是公钥
     -   登录GitHub --> 点击头像 --> settings --> SSH and GPG keys --> new SSH key
         -   Title随便填
