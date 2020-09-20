@@ -37,6 +37,7 @@
 -   git status 查看是否有文件未提交
 -   git restore [filename] 提交之前丢弃修改
 -   git diff [filename] 查看被修改的内容
+-   git checkout -- [filename] 丢弃工作区的修改
 
 
 
@@ -51,7 +52,6 @@
 -   git revert HEAD 通过再提交一次上个版本回退到上个版本, 对远程分支有效
 -   git reflog 获取version
 -   git reset --hard [version] 退回到指定版本
--   git checkout -- [filename] 丢弃工作区的修改
 
 
 
