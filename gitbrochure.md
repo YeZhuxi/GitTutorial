@@ -8,6 +8,7 @@
 -   git config --global user.email "[user@example.com\]" 配置邮箱
 -   git config user.name 查看当前用户名
 -   git config user.email 查看当前用户邮箱
+-   git config --global --list 查看所有配置信息
 
 
 
@@ -30,6 +31,7 @@
 
 -   git init 把目录变成可管理仓库(添加.git目录)
 -   git add [filename] 添加到暂存区
+-   git add -A 一次性添加所有未跟踪邮件
 -   git commit -m "[注释]" 提交到工作区
 -   git commit --amend 对当前提交节点再次提交, 不产生新的子节点
 -   git status 查看是否有文件未提交
@@ -62,6 +64,8 @@
     ​	在版本回退里，每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。截止到目前，只有一条时间线，在Git里，这个分支叫主分支，即master分支。HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支, 不同分支上的修改互不影响
 
 -   git branch 查看分支, 当前分支前会添加一个 * 号
+
+-   git branch -m [oldbranch] [newbranch] 重命名分支
 
 -   git branch [branchname] [ref] 在ref创建分支, ref默认为当前位置
 
@@ -144,7 +148,10 @@
     -   从现在起, 只要本地做了提交, 就可以通过如下命令把新修改推送到远程仓库
         -   git push origin master
     -   通过如下命令, 可以把远程仓库克隆到本地
-        -   git clone [url]
+        -   git clone [url] [local diretory]
+            -   git clone [url]  全克隆(所有分支)
+            -   git clone [-b branchname] [url] 单一克隆
+            -   git clone [--depth n] [url] 克隆近 n 次提交
 
 
 
