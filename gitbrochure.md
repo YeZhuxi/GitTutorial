@@ -141,6 +141,8 @@
 
     -   在本地仓库运行如下命令, 关联本地库
         -   git remote add origin [url]
+        -   git remote get-url origin 查看远程url
+        -   git remote set-url origin [url] 设置远程url
     -   在本地仓库运行如下命令, 把master分支内容推送到远程仓库
         -   git push -u origin master
         -   第一次需要 -u 参数, 把本地master分支和远程master分支关联
@@ -166,6 +168,7 @@
     -   master是主分支, 要时刻与远程同步
     -   一些bug分支不需要推送到远程, 可以先合并到master, 然后把master推送到远程
 -   抓取分支
+    -   git pull
     -   多人协作时，大家都会往master分支上推送各自的修改。现在模拟另外一个同事，在另一台电脑上(要把SSH key添加到GitHub上)或者同一台电脑上另外一个目录克隆，新建一个目录名字叫testgit2
     -   首先把dev分支推送到远程
     -   接着进入testgit2, 把远程库克隆到本地
