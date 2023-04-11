@@ -118,7 +118,7 @@
 
 ## 远程仓库
 
--   创建SSH Key 
+-   创建SSH Key （现在可以使用token登录，更简单）
 
     -   打开cmd
         -   ssh-keygen -t rsa -C "[user@example.com]"
